@@ -5,6 +5,7 @@
   font-size: 62.5%;
   --fs-header: 4.0rem;
   --fs-body: 2.0rem;
+  --fs-card-title: 2rem;
 
   --fc-primary: #FFF;
   --fc-secondary: #23053A;
@@ -13,12 +14,17 @@
   --bg-primary: #EFF1FF;
   --bg-secondary: #8E9AAF;
   --bg-title: #CBC0D3;
+  --bg-card-title: #FEEAFA;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-primary);
 }
 
 header {
@@ -43,4 +49,58 @@ header h1 {
   letter-spacing: 0.05em;
   margin-top: 2rem;
   padding: 0.8rem auto;
+}
+
+.page {
+  margin: 0 3.2rem;
+}
+
+.page p {
+  font-family: var(--ff-body);
+  color: var(--fc-secondary);
+  font-size: var(--fs-body);
+  line-height: 2.2rem;
+  text-align: center;
+  margin: 1.4rem auto 6rem;
+}
+
+/* .cards-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr 2fr);
+  gap: 3.6rem;
+} */
+
+.card {
+  position: relative;
+  margin-bottom: 3.6rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card .card-title-wrapper {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 11.2rem;
+  
+  background-color: var(--bg-card-title);
+  padding: 0.3rem 2.2rem;
+  
+  border-radius: 20px;
+}
+
+.card .card-title {
+
+  font-family: var(--ff-header);
+  font-size: var(--fs-card-title);
+  font-weight: 400;
+  text-align: center;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: var(--fc-secondary-light);
+
 }
