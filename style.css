@@ -64,6 +64,14 @@ header h1 {
   margin: 1.4rem auto 6rem;
 }
 
+<<<<<<< HEAD
+=======
+/* .cards-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr 2fr);
+  gap: 3.6rem;
+} */
+>>>>>>> 82f6e7bcae8bdbc1206ecd1464f64d7a5338ef11
 
 .card {
   position: relative;
