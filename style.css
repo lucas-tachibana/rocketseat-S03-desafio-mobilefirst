@@ -109,6 +109,40 @@ header p {
 }
 
 @media (min-width: 980px) {
+  body {
+    display: grid;
+    grid-template-columns: 30vw auto;
+  }
+
+  header {
+    background-color: var(--bg-secondary);
+  }
+
+  .title-page{
+  }
+
+  .title-page img {
+    max-width: 21.5rem;
+    max-height: 16.7rem;
+  }
+
+  .title-page h1 {
+    font-size: var(5rem);
+    color: var(--fc-primary);
+    line-height: 7rem;
+  }  
+
+  header p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: var(--fc-primary);
+    max-width: 26vw;
+    margin-top: 5rem;
+  }
+
   
 }
 
